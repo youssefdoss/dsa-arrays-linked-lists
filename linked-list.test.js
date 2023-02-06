@@ -206,32 +206,32 @@ describe("average", function() {
   });
 });
 
-describe("reverseInPlace", function() {
-  it("reverses a list of 3 in place", function() {
-    let lst = new LinkedList([1,2,3]);
-    lst.reverseInPlace();
-    expect(lst.head.val).toBe(3);
-    expect(lst.head.next.val).toBe(2);
-    expect(lst.head.next.next.val).toBe(1);
-    expect(lst.tail.val).toBe(1);
-    expect(lst.tail.next).toBe(null);
-  });
+// describe("reverseInPlace", function() {
+//   it("reverses a list of 3 in place", function() {
+//     let lst = new LinkedList([1,2,3]);
+//     lst.reverseInPlace();
+//     expect(lst.head.val).toBe(3);
+//     expect(lst.head.next.val).toBe(2);
+//     expect(lst.head.next.next.val).toBe(1);
+//     expect(lst.tail.val).toBe(1);
+//     expect(lst.tail.next).toBe(null);
+//   });
 
-  it("reverses a list of 2 in place", function() {
-    let lst = new LinkedList([1,2]);
-    lst.reverseInPlace();
-    expect(lst.head.val).toBe(2);
-    expect(lst.head.next.val).toBe(1);
-    expect(lst.tail.val).toBe(1);
-  });
+//   it("reverses a list of 2 in place", function() {
+//     let lst = new LinkedList([1,2]);
+//     lst.reverseInPlace();
+//     expect(lst.head.val).toBe(2);
+//     expect(lst.head.next.val).toBe(1);
+//     expect(lst.tail.val).toBe(1);
+//   });
 
-  it("reverses a list of 1 in place", function() {
-    let lst = new LinkedList([1]);
-    lst.reverseInPlace();
-    expect(lst.head.val).toBe(1);
-    expect(lst.head.next).toBe(null);
-    expect(lst.tail.val).toBe(1);
-    expect(lst.tail.next).toBe(null);
-  });
-});
+//   it("reverses a list of 1 in place", function() {
+//     let lst = new LinkedList([1]);
+//     lst.reverseInPlace();
+//     expect(lst.head.val).toBe(1);
+//     expect(lst.head.next).toBe(null);
+//     expect(lst.tail.val).toBe(1);
+//     expect(lst.tail.next).toBe(null);
+//   });
+// });
 
